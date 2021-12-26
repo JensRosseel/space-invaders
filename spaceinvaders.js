@@ -202,3 +202,6 @@ document.getElementById('nextLevel').addEventListener('click', () => {
 
 document.addEventListener('keydown', moveShooter);
 document.addEventListener('keydown', shoot);
+document.getElementById('move-left').addEventListener('click', moveShooter('ArrowLeft'));
+document.getElementById('move-right').addEventListener('click', moveShooter('ArrowRight'));
+document.getElementById('shoot-button').addEventListener('click', shoot('ArrowUp'));

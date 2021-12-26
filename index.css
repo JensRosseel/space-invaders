@@ -89,3 +89,51 @@ button:hover {
 #playAgain, #nextLevel{
 	display: none;
 }
+
+.controls{
+	display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+	.container{
+		height: 300px;
+		width: 300px;
+	}
+
+	.battlefield{
+		height: 300px;
+		width: 300px;
+	}
+
+	.battlefield div {
+		width: 20px;
+		height: 20px;
+	}
+
+	.info{
+		grid-template-columns: 150px 150px;
+	}
+
+	.invader, .shooter, .laser, .boom{
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+	}
+
+	.controls{
+		margin-top: 70%;
+		display: grid;
+		grid-template-rows: 50% 50%;
+	}
+
+	.move-buttons{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.move-buttons button{
+		font-size: 30px;
+		height: 80%;
+		width: 80%;
+	}
+}
